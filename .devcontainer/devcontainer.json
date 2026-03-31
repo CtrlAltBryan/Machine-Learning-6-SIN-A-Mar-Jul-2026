@@ -1,7 +1,8 @@
 {
-  "name": "ML Workshop 2 - Work Enviroment",
+  "name": "ML Workshop 2 - Work Environment",
   "build": {
-    "dockerfile": "Dockerfile"
+    "dockerfile": "Dockerfile",
+    "context": ".." 
   },
   "customizations": {
     "vscode": {
