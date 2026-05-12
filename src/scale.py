@@ -31,8 +31,8 @@ def min_max_scale(values):
     arr = np.asarray(values, dtype=float)
     col_min = arr.min()
     col_max = arr.max()
-    # BUG (do not delete this comment until you fix the line below):
-    return (arr - col_max) / (col_max - col_min)
+    # BUG FIX: se usaba col_max en el numerador en lugar de col_min, dando valores en [-1, 0]
+    return (arr - col_min) / (col_max - col_min)
 
 
 def standardize(values):
