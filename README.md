@@ -42,7 +42,9 @@ Paste your repository URL in Canvas before the timer expires. The Git commit tim
 ## Rules
 
 - **Open notes, open slides, open class repository, open official docs** (sklearn, pandas) are allowed.
+- **AI assistants (ChatGPT, Claude, Copilot) are NOT allowed.** Codespaces activity is logged.
 - **No communication with other students.** Two notebooks with essentially identical code → 0 for both.
+- Phones, second screens, and external chat windows are not permitted during the 90 minutes.
 
 ## Tips
 
