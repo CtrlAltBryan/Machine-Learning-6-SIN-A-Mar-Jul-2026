@@ -18,17 +18,19 @@ RUN uv venv .venv
 ENV VIRTUAL_ENV=/app/.venv
 ENV PATH="/app/.venv/bin:${PATH}"
 
-# Install dependencies — note the --python flag, mandatory in Docker
-# because there is no `source .venv/bin/activate` step that persists across layers
+# Install dependencies
 COPY pyproject.toml uv.lock* /app/
 RUN uv pip install --python /app/.venv/bin/python \
     pandas \
-    scikit-learn \
+    "scikit-learn>=1.5.0,<1.6.0" \
     matplotlib \
     seaborn \
     numpy \
     ipykernel \
     jupyter
+
+# Registrar el venv como kernel de Jupyter
+RUN /app/.venv/bin/python -m ipykernel install --name ml-exam --display-name "ML Exam (Python 3.12)"
 
 # Copy project files
 COPY . /app/
