@@ -39,6 +39,7 @@ Paste your repository URL in Canvas before the timer expires. The Git commit tim
 └── README.md
 ```
 
+
 ## Rules
 
 - **Open notes, open slides, open class repository, open official docs** (sklearn, pandas) are allowed.
