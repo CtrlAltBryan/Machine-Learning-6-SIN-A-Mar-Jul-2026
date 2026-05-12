@@ -22,6 +22,6 @@
     }
   },
   "forwardPorts": [],
-  "postCreateCommand": "echo 'Environment ready. Open notebooks/exam.ipynb to begin.'",
+  "postCreateCommand": "pip install -e .",
   "remoteUser": "root"
 }
